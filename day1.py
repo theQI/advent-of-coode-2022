@@ -16,4 +16,7 @@ elfs = len(calories_list)
 
 calories_list = sorted(calories_list)
 
-print(f"Top 3: {calories_list[elfs-1]} {calories_list[elfs-2]} {calories_list[elfs-3]}")
+print(f"Top Carrier: {calories_list[elfs-1]}")
+print(
+    f"Sum of Top 3: {calories_list[elfs-1] + calories_list[elfs-2] + calories_list[elfs-3]}"
+)
