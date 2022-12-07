@@ -22,7 +22,8 @@ for a in guide:
     from_stack = splits[3]
     to_stack = splits[5]
     moving_crates = stacks[from_stack][-crates_count:]
-    moving_crates.reverse()
+    # reverse the moving crates for part 1 answer
+    # moving_crates.reverse()
     del stacks[from_stack][-crates_count:]
     stacks[to_stack] = stacks[to_stack] + moving_crates
 
@@ -31,4 +32,4 @@ end_of_stack = []
 for stack in stacks.keys():
     end_of_stack.append(stacks[stack][-1])
 
-print(f"""Part 1 answer: {"".join(end_of_stack)}""")
+print(f"""Part 2 answer: {"".join(end_of_stack)}""")
